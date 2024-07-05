@@ -1,0 +1,57 @@
+{
+  "name": "root",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "test-ci": "mkdir -p build && node --test --experimental-test-coverage --test-reporter=lcov --test-reporter-destination=build/lcov.info --test-reporter=junit --test-reporter-destination=build/junit.xml",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@bluecateng/commitlint-config-bluecateng": "^1.0.2",
+    "@bluecateng/eslint-config-node": "^4.1.0",
+    "@bluecateng/git-check-push": "^1.0.1",
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "esbuild": "^0.23.0",
+    "eslint": "^8.6.0",
+    "husky": "^9.0.11",
+    "lerna": "^8.1.6",
+    "lint-staged": "^15.2.7",
+    "prettier": "^3.3.2",
+    "stylelint-test-rule-node": "^0.2.2"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "eslintConfig": {
+    "extends": [
+      "@bluecateng/node"
+    ],
+    "parserOptions": {
+      "sourceType": "module",
+      "ecmaVersion": 2023
+    },
+    "rules": {
+      "import/extensions": [
+        "warn",
+        "always"
+      ],
+      "jest/no-deprecated-functions": "off"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@bluecateng/commitlint-config-bluecateng"
+    ]
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix --max-warnings 0",
+      "prettier --write"
+    ],
+    "*.{md,yaml}": [
+      "prettier --write"
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+name: ESLint
+
+on:
+  push:
+    branches: ['*']
+
+permissions: read-all
+
+jobs:
+  eslint:
+    name: Run eslint scanning
+    runs-on: ubuntu-latest
+    permissions:
+      security-events: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # tag=v4.1.7
+
+      - name: Setup node
+        uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # tag=v4.0.2
+        with:
+          node-version: 18
+
+      - name: Run ESLint
+        run: |
+          npm ci
+          npm run lint-ci
+        continue-on-error: true
+
+      - name: Upload analysis results to GitHub
+        uses: github/codeql-action/upload-sarif@b611370bb5703a7efb587f9d136a52ea24c5c38c # tag=v3.25.11
+        with:
+          sarif_file: build/eslint-results.sarif
+          wait-for-processing: true
