@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 5.0.0 (2024-07-05)
+
+### ⚠ BREAKING CHANGES
+
+- The peer dependency was changed to stylelint v16.
+
+### Features
+
+- upgrade to stylelint v16 ([ebb0ecc](https://github.com/bluecatengineering/stylelint-packages/commit/ebb0ecc670f7ea8f000763f53bcdba2f11975864))
+
 ## [4.0.3](https://github.com/bluecatengineering/pelagos-packages/compare/@bluecateng/stylelint-plugin@4.0.2...@bluecateng/stylelint-plugin@4.0.3) (2024-01-16)
 
 **Note:** Version bump only for package @bluecateng/stylelint-plugin
