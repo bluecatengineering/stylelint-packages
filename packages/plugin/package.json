@@ -1,0 +1,31 @@
+{
+  "name": "@bluecateng/stylelint-plugin",
+  "version": "4.0.3",
+  "description": "Custom Stylelint rule definitions for BlueCat Engineering",
+  "license": "ISC",
+  "type": "module",
+  "scripts": {
+    "prepack": "esbuild src/index.js --bundle --minify --platform=node --format=esm --outfile=dist/index.mjs --external:stylelint --external:yaml --external:@bluecateng/pelagos --define:process.env.NODE_ENV=\\'production\\'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github:bluecatengineering/stylelint-packages",
+    "directory": "packages/plugin"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.mjs",
+  "peerDependencies": {
+    "@bluecateng/pelagos": ">=8",
+    "stylelint": "^16.0.0"
+  },
+  "dependencies": {
+    "yaml": "^2.1.1"
+  },
+  "eslintConfig": {
+    "rules": {
+      "strict": "off"
+    }
+  }
+}

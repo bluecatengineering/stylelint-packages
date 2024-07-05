@@ -1,0 +1,31 @@
+{
+  "name": "@bluecateng/stylelint-config",
+  "version": "5.0.3",
+  "description": "Stylelint configuration for BlueCat Engineering",
+  "license": "ISC",
+  "type": "module",
+  "scripts": {
+    "prepack": "esbuild src/index.js --bundle --minify --platform=node --format=esm --outfile=dist/index.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github:bluecatengineering/stylelint-packages",
+    "directory": "packages/config"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.mjs",
+  "peerDependencies": {
+    "stylelint": "^16.0.0",
+    "stylelint-config-standard": "^36.0.0"
+  },
+  "dependencies": {
+    "@bluecateng/stylelint-plugin": "^4.0.3"
+  },
+  "eslintConfig": {
+    "rules": {
+      "strict": "off"
+    }
+  }
+}

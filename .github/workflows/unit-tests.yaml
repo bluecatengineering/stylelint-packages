@@ -1,0 +1,48 @@
+name: UnitTests
+
+on:
+  push:
+    branches: ['*']
+
+permissions: read-all
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    permissions:
+      checks: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # tag=v4.1.7
+
+      - name: Setup node
+        uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # tag=v4.0.2
+        with:
+          node-version: 20
+
+      - name: Run tests
+        run: |
+          npm ci
+          npx lerna run prepack
+          npm run test-ci
+        env:
+          TZ: America/Toronto
+
+      - name: Publish test report
+        uses: mikepenz/action-junit-report@db71d41eb79864e25ab0337e395c352e84523afe # tag=v4.3.1
+        if: always()
+        with:
+          report_paths: build/junit.xml
+
+      - name: Setup LCOV
+        uses: hrishikesh-kadam/setup-lcov@f5da1b26b0dcf5d893077a3c4f29cf78079c841d # tag=v1.0.0
+
+      - name: Publish coverage report
+        uses: zgosalvez/github-actions-report-lcov@b015e40936f37013a763e678c4f1edffcf15f052 # tag=v4.1.11
+        with:
+          coverage-files: build/lcov.info
+          minimum-coverage: 100
+          artifact-name: code-coverage-report
+          github-token: ${{ secrets.GITHUB_TOKEN }}
