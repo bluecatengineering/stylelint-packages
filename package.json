@@ -27,6 +27,11 @@
     "prettier": "^3.3.2",
     "stylelint-test-rule-node": "^0.2.2"
   },
+  "overrides": {
+    "lerna": {
+      "nx": "^18.0.0"
+    }
+  },
   "workspaces": [
     "packages/*"
   ],
