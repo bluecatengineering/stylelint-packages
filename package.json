@@ -13,19 +13,19 @@
   },
   "devDependencies": {
     "@bluecateng/commitlint-config-bluecateng": "^1.0.2",
-    "@bluecateng/eslint-config-node": "^4.1.0",
+    "@bluecateng/eslint-config-node": "^5.0.2",
     "@bluecateng/git-check-push": "^1.0.1",
     "@bluecateng/prettier-config": "^1.0.0",
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
     "@microsoft/eslint-formatter-sarif": "^3.1.0",
-    "esbuild": "^0.23.0",
-    "eslint": "^8.6.0",
+    "esbuild": "^0.24.2",
+    "eslint": "^9.19.0",
     "husky": "^9.0.11",
     "lerna": "^8.1.6",
     "lint-staged": "^15.2.7",
     "prettier": "^3.3.2",
-    "stylelint-test-rule-node": "^0.2.2"
+    "stylelint-test-rule-node": "^0.4.0"
   },
   "overrides": {
     "lerna": {
@@ -36,22 +36,6 @@
     "packages/*"
   ],
   "prettier": "@bluecateng/prettier-config",
-  "eslintConfig": {
-    "extends": [
-      "@bluecateng/node"
-    ],
-    "parserOptions": {
-      "sourceType": "module",
-      "ecmaVersion": 2023
-    },
-    "rules": {
-      "import/extensions": [
-        "warn",
-        "always"
-      ],
-      "jest/no-deprecated-functions": "off"
-    }
-  },
   "commitlint": {
     "extends": [
       "@bluecateng/commitlint-config-bluecateng"
