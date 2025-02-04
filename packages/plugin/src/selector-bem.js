@@ -35,7 +35,6 @@ const rule = (actual) => (root, result) => {
 				!/^.[A-Z][A-Za-z\d]+__[a-z][A-Za-z\d]+--[a-z][A-Za-z\d]+(:|\[|$)/.test(part)
 			) {
 				report({
-					index: rule.lastEach,
 					message: messages.expected(part),
 					node: rule,
 					ruleName,

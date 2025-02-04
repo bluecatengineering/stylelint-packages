@@ -132,7 +132,7 @@ const rule = (actual) => (root, result) => {
 	}
 
 	root.walkDecls(declFilter, (node) => {
-		const {prop, value, lastEach} = node;
+		const {prop, value} = node;
 		if (/^--/.test(prop)) {
 			return;
 		}
@@ -181,7 +181,6 @@ const rule = (actual) => (root, result) => {
 		}
 
 		report({
-			index: lastEach,
 			message: messages.expected(prop),
 			node,
 			ruleName,
