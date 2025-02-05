@@ -38,6 +38,8 @@ jobs:
 
       - name: Setup LCOV
         uses: hrishikesh-kadam/setup-lcov@6c1aa0cc9e1c02f9f58f01ac599f1064ccc83470 # tag=v1.1.0
+        with:
+          ref: 'v1.16' # workaround for https://github.com/zgosalvez/github-actions-report-lcov/issues/282
 
       - name: Publish coverage report
         uses: zgosalvez/github-actions-report-lcov@5989987f8058a03137e90bc16f9c0baaac5e069a # tag=v4.1.22
