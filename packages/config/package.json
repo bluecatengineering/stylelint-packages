@@ -1,6 +1,6 @@
 {
   "name": "@bluecateng/stylelint-config",
-  "version": "6.0.0",
+  "version": "6.0.1",
   "description": "Stylelint configuration for BlueCat Engineering",
   "license": "ISC",
   "type": "module",
@@ -21,7 +21,7 @@
     "stylelint-config-standard": "^37.0.0"
   },
   "dependencies": {
-    "@bluecateng/stylelint-plugin": "^5.0.0"
+    "@bluecateng/stylelint-plugin": "^5.0.1"
   },
   "eslintConfig": {
     "rules": {

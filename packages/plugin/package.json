@@ -1,6 +1,6 @@
 {
   "name": "@bluecateng/stylelint-plugin",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "description": "Custom Stylelint rule definitions for BlueCat Engineering",
   "license": "ISC",
   "type": "module",

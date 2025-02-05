@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.1](https://github.com/bluecatengineering/stylelint-packages/compare/@bluecateng/stylelint-plugin@5.0.0...@bluecateng/stylelint-plugin@5.0.1) (2025-02-05)
+
+### Bug Fixes
+
+- fix warning in call to report ([8f5beaf](https://github.com/bluecatengineering/stylelint-packages/commit/8f5beafbf5368c72a72e20be88a034852f91622a))
+
 ## 5.0.0 (2024-07-05)
 
 ### ⚠ BREAKING CHANGES
