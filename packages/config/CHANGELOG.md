@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.0](https://github.com/bluecatengineering/stylelint-packages/compare/@bluecateng/stylelint-config@6.0.1...@bluecateng/stylelint-config@7.0.0) (2025-08-21)
+
+### ⚠ BREAKING CHANGES
+
+- Some styles may need changes due to the new rules in v38 and v39.
+
+### Features
+
+- update stylelint-config-standard to v39 ([a20653d](https://github.com/bluecatengineering/stylelint-packages/commit/a20653d1eb118a65d41856fdcf13385b55625bcc))
+
 ## [6.0.1](https://github.com/bluecatengineering/stylelint-packages/compare/@bluecateng/stylelint-config@6.0.0...@bluecateng/stylelint-config@6.0.1) (2025-02-05)
 
 **Note:** Version bump only for package @bluecateng/stylelint-config
