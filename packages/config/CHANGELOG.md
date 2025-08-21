@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.1](https://github.com/bluecatengineering/stylelint-packages/compare/@bluecateng/stylelint-config@7.0.0...@bluecateng/stylelint-config@7.0.1) (2025-08-21)
+
+### Bug Fixes
+
+- disable new rules that clash with less features ([cea3a78](https://github.com/bluecatengineering/stylelint-packages/commit/cea3a78118e10b390a639b3a713d2fa99be372af))
+
 ## [7.0.0](https://github.com/bluecatengineering/stylelint-packages/compare/@bluecateng/stylelint-config@6.0.1...@bluecateng/stylelint-config@7.0.0) (2025-08-21)
 
 ### ⚠ BREAKING CHANGES
