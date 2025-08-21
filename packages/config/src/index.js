@@ -8,6 +8,8 @@ export default {
 		'declaration-no-important': true,
 		'function-no-unknown': null,
 		'import-notation': 'string',
+		'nesting-selector-no-missing-scoping-root': null,
+		'no-invalid-position-declaration': null,
 		'property-no-vendor-prefix': null,
 		'rule-empty-line-before': null,
 		'selector-class-pattern': null,
