@@ -3,7 +3,7 @@ name: Scorecards
 on:
   branch_protection_rule:
   push:
-    branches: [master]
+    branches: [main]
   schedule:
     - cron: '51 9 * * 3'
 
