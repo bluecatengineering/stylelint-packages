@@ -15,10 +15,10 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # tag=v5.0.0
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # tag=v6.0.1
 
       - name: Setup node
-        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # tag=v4.4.0
+        uses: actions/setup-node@395ad3262231945c25e8478fd5baf05154b1d79f # tag=v6.1.0
         with:
           node-version: 22
 
@@ -31,7 +31,7 @@ jobs:
           TZ: America/Toronto
 
       - name: Publish test report
-        uses: mikepenz/action-junit-report@3585e9575db828022551b4231f165eb59a0e74e3 # tag=v5.6.2
+        uses: mikepenz/action-junit-report@a294a61c909bd8a4b563024a2faa28897fd53ebc # tag=v6.1.0
         if: always()
         with:
           report_paths: build/junit.xml
@@ -42,7 +42,7 @@ jobs:
           ref: 'v1.16' # workaround for https://github.com/zgosalvez/github-actions-report-lcov/issues/282
 
       - name: Publish coverage report
-        uses: zgosalvez/github-actions-report-lcov@eda775f552bfb2bffbdedea26f19dfb8c24a1648 # tag=v4.1.26
+        uses: zgosalvez/github-actions-report-lcov@8ead3c903cefbc389528f5e032e793a5d0e5b626 # tag=v5.0.2
         with:
           coverage-files: build/lcov.info
           minimum-coverage: 100
