@@ -1,9 +1,9 @@
 # stylelint packages
 
-![ESLint](https://github.com/bluecatengineering/stylelint-packages/workflows/ESLint/badge.svg?branch=master)
-![UnitTests](https://github.com/bluecatengineering/stylelint-packages/workflows/UnitTests/badge.svg?branch=master)
-![CodeQL](https://github.com/bluecatengineering/stylelint-packages/workflows/CodeQL/badge.svg?branch=master)
-[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/bluecatengineering/stylelint-packages/badge)](https://api.securityscorecards.dev/projects/github.com/bluecatengineering/stylelint-packages)
+![ESLint](https://github.com/bluecatengineering/stylelint-packages/workflows/ESLint/badge.svg)
+![UnitTests](https://github.com/bluecatengineering/stylelint-packages/workflows/UnitTests/badge.svg)
+![CodeQL](https://github.com/bluecatengineering/stylelint-packages/workflows/CodeQL/badge.svg)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/bluecatengineering/stylelint-packages/badge)](https://scorecard.dev/viewer/?uri=github.com/bluecatengineering/stylelint-packages)
 
 Packages for stylelint.
 
