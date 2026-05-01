@@ -20,7 +20,7 @@
     "@commitlint/config-conventional": "^20.3.0",
     "@microsoft/eslint-formatter-sarif": "^3.1.0",
     "esbuild": "^0.28.0",
-    "eslint": "^9.19.0",
+    "eslint": "^10.3.0",
     "husky": "^9.0.11",
     "lerna": "^9.0.3",
     "lint-staged": "^16.1.5",
