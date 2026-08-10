@@ -48,7 +48,7 @@
   "allowScripts": {
     "@carbon/icon-helpers": false,
     "@carbon/icons-react": false,
-    "esbuild": false,
+    "esbuild": true,
     "nx": false
   }
 }
