@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.0](https://github.com/bluecatengineering/stylelint-packages/compare/%40bluecateng%2Fstylelint-config%407.0.2...%40bluecateng%2Fstylelint-config%408.0.0) (2026-08-10)
+
+### ⚠ BREAKING CHANGES
+
+- The peer dependency was changed to stylelint v17.
+
+### Features
+
+- upgrade to stylelint v17 ([9400e69](https://github.com/bluecatengineering/stylelint-packages/commit/9400e6972c3ad1a361470c95401694989690c49a))
+
 ## [7.0.2](https://github.com/bluecatengineering/stylelint-packages/compare/@bluecateng/stylelint-config@7.0.1...@bluecateng/stylelint-config@7.0.2) (2026-04-08)
 
 **Note:** Version bump only for package @bluecateng/stylelint-config
