@@ -11,6 +11,10 @@
     "prepack": "npm t",
     "prepare": "husky"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluecatengineering/stylelint-packages.git"
+  },
   "devDependencies": {
     "@bluecateng/commitlint-config-bluecateng": "^1.0.2",
     "@bluecateng/eslint-config-node": "^5.0.2",
@@ -50,5 +54,6 @@
     "@carbon/icons-react": false,
     "esbuild": true,
     "nx": false
-  }
+  },
+  "version": ""
 }
