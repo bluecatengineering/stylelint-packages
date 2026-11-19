@@ -4,7 +4,7 @@ export default [
 	blueCatNode,
 	{
 		rules: {
-			'import/extensions': ['warn', 'always'],
+			'import-x/extensions': ['warn', 'always'],
 			'jest/no-deprecated-functions': 'off',
 		},
 	},
