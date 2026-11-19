@@ -17,8 +17,8 @@
   ],
   "main": "dist/index.mjs",
   "peerDependencies": {
-    "stylelint": "^17.0.0",
-    "stylelint-config-standard": "^40.0.0"
+    "stylelint": "^18.0.0",
+    "stylelint-config-standard": "^41.0.0"
   },
   "dependencies": {
     "@bluecateng/stylelint-plugin": "^6.0.1"
