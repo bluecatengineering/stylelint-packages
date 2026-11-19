@@ -14,7 +14,9 @@ export default {
 		'rule-empty-line-before': null,
 		'selector-class-pattern': null,
 		'selector-id-pattern': null,
+		'selector-no-unmatchable': null,
 		'selector-no-vendor-prefix': null,
+		'value-no-invalid': null,
 		'value-no-vendor-prefix': null,
 
 		'@bluecateng/property-strict-value': true,
